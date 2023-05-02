@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>인스타그램 레이아웃 과제</title>
+        <link rel="stylesheet" href="./flex.css">
+        <script src="https://kit.fontawesome.com/e8b0939a12.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <div id="container4">
+                <i class="fas fa-chevron-left"></i>
+                <section class="item1">게시물</section>
+            </div>
+            <div id="container5">
+                <img src="{% static 'images/top.jpg' %}" style="width: 20px;">
+                <section class="item">likelion_dongguk<br><span class="dgu">동국대학교</span></section>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div id="container4">
+                <img src="{% static 'images/middle.jpg' %}" style="width: 650px;" class="middle">
+            </div>
+            <span id="container1">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-paper-plane"></i>
+                <i class="fas fa-bookmark"></i>
+            </span>
+            <div id="container3">
+                <section class="item">ustar1210님 외 55명이 좋아합니다</section>
+            </div>
+            <div id="container6">
+                <section class="item2">3월 29일</section>
+            </div>
+            <span id="container2">
+                <i class="fas fa-house-user"></i>
+                <i class="fas fa-compass"></i>
+                <i class="far fa-caret-square-right"></i>
+                <i class="far fa-plus-square"></i>
+                <i class="fas fa-paper-plane"></i>
+                <img src="{% static 'images/bottom.jpg' %}">
+            </span>
+        </div>
+    </body>
+</html>
